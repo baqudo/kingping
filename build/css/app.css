@@ -1,0 +1,341 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5,
+h6, p, blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt,
+dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+img, fieldset, a img {
+  border: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  -webkit-appearance: none;
+}
+
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+input, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+div, input, textarea, select, button,
+h1, h2, h3, h4, h5, h6, a, span, a:focus {
+  outline: none;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.icon-facebook {
+  width: 0.53em;
+  height: 1em;
+  fill: #000;
+}
+
+body {
+  background: #FFF;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+  font-family: "Gotham Pro";
+}
+
+@font-face {
+  body {
+    font-family: Gotham Pro;
+    src: url("fonts/GothamProRegular.woff2") format("woff2"), url("fonts/GothamProRegular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@font-face {
+  body {
+    font-family: Gotham Pro;
+    src: url("fonts/GothamProMedium.woff2") format("woff2"), url("fonts/GothamProMedium.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@font-face {
+  body {
+    font-family: Gotham Pro;
+    src: url("fonts/GothamProBold.woff2") format("woff2"), url("fonts/GothamProBold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@font-face {
+  body {
+    font-family: Gotham Pro;
+    src: url("fonts/GothamPro.woff2") format("woff2"), url("fonts/GothamPro.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.button {
+  width: 227px;
+  height: 57px;
+  border: 3px solid #fdb352;
+  background-color: rgba(185, 53, 99, 0);
+  text-transform: uppercase;
+}
+
+.top__inner {
+  width: 100%;
+  height: 1000px;
+  background: #333 url(../img/top_bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.bottom__inner {
+  width: 100%;
+  height: 1000px;
+  background: #333 url(../img/top_bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.header {
+  padding-top: 44px;
+  *zoom: 1;
+}
+
+.header:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.header__logo {
+  float: left;
+}
+
+.header .header__lang {
+  float: right;
+  margin-right: 50px;
+  margin-top: 17px;
+  font-family: "Proxima Nova";
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.header .header__lang .lang__item {
+  display: inline-block;
+  margin-left: 13px;
+}
+
+.header .header__lang .lang__link {
+  display: block;
+  color: #a38256;
+}
+
+.header .header__lang .lang__link.is-active {
+  color: #fff;
+}
+
+.menu__button {
+  background: transparent;
+  border: none;
+  float: right;
+  margin-top: 14px;
+}
+
+.menu__button .burger {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  border-radius: 10px;
+  border: 10px solid #fff;
+  border-top: 3px solid;
+  border-bottom: 0px solid;
+  margin: 4px 0;
+}
+
+.logo {
+  display: block;
+  background-image: url("../img/sprite.png");
+  width: 50px;
+  height: 56px;
+  background-position: -909px -475px;
+  padding-left: 70px;
+  color: #fff;
+  font-size: 2.0625em;
+  font-weight: 500;
+  line-height: 1.55em;
+}
+
+.logo:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.demo-acc {
+  margin-top: 220px;
+  color: #FFF;
+  width: 61%;
+}
+
+.demo-acc__title {
+  font-size: 3.75em;
+  font-weight: 700;
+  line-height: 1.09em;
+}
+
+.demo-acc__text {
+  margin-right: 140px;
+  margin-top: 42px;
+  font-size: 1.0625em;
+  line-height: 1.5625em;
+}
+
+.demo-acc__button {
+  margin-top: 55px;
+  color: #fff;
+  font-size: 0.875em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.global {
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.global__title {
+  font-size: 31px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.global__text {
+  color: #a0bcd3;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.global__company {
+  position: relative;
+}
+
+.global__company .company {
+  position: relative;
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0 0 0 15px rgba(98, 119, 135, 0.1);
+  border: 5px solid #627787;
+  background-color: #1c2932;
+  margin: 35px;
+}
+
+.global__company .company__logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.global__company .company1 {
+  width: 297px;
+  height: 297px;
+}
+
+.global__company .company2 {
+  width: 94px;
+  height: 95px;
+}
+
+.global__company .company3 {
+  width: 132px;
+  height: 132px;
+}
+
+.global__company .company4 {
+  width: 148px;
+  height: 148px;
+}
+
+.global__company .company5 {
+  width: 127px;
+  height: 127px;
+}
+
+.global__company .company6 {
+  width: 92px;
+  height: 92px;
+}
+
+.global__start .start__text {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.global__start .start__text span {
+  color: #7e97aa;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=app.css.map */

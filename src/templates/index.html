@@ -1,0 +1,27 @@
+---
+title: Kingping
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	<!-- BEGIN top -->
+	<div class="top">
+		<!-- BEGIN top__inner -->
+		<div class="top__inner">
+			<div class="wrapper">
+				{% include "partials/_header.html" %}
+				{% include "partials/_demo_acc.html" %}
+			</div>
+		</div>
+		<!-- END top__inner -->
+		<!-- BEGIN bottom__inner -->
+		<div class="bottom__inner">
+			<div class="wrapper">
+				{% include "partials/_global_market.html" %}
+			</div>
+		</div>
+		<!-- END bottom__inner -->
+	</div>
+	<!-- END top -->
+
+{% endblock %}
