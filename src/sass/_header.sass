@@ -1,4 +1,5 @@
 .header
+	position: relative
 	padding-top: 44px 
 	+clr
 	&__logo
@@ -12,14 +13,31 @@
 		font-size: 15px
 		font-weight: 600
 		text-transform: uppercase
-		.lang__item
-			display: inline-block
-			margin-left: 13px 
 		.lang__link
 			display: block
+			display: inline-block
+			margin-left: 13px 
 			color: #a38256
 		.lang__link.is-active
 			color: #fff
+.menu
+	display: none
+	position: absolute
+	right: -70px
+	top: 191px 
+	&__list
+	&__item
+	&__link
+		display: block
+		color: #ffffff
+		font-family: "Proxima Nova"
+		font-size: 13px
+		font-weight: 600
+		line-height: 30px
+		text-transform: uppercase
+		&:hover
+			color: #fdb352
+
 .menu__button
 	background: transparent
 	border: none  
@@ -37,13 +55,16 @@
 		margin: 4px 0
 
 .logo
+	+clr
+	&__img
+		float: left
+		margin-right: 19px 
+	&__text
 	display: block
-	+s(logo-p)
-	padding-left: 70px 
 	color: #fff
 	font-size: 2.0625em
 	font-weight: 500
-	line-height: 1.55em
+	line-height: 1.6em
 	&:hover
 		text-decoration: none
 		color: #fff
