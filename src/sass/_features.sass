@@ -3,31 +3,18 @@
 	margin-top: 258px 
 	border-bottom: 1px solid #ddd 
 	&__header
-		position: relative
-		font-size: 20px
-		font-weight: 700
-		text-transform: uppercase
-		text-align: center
-		&:before
-			content: "" 
-			display: block
-			position: absolute
-			left: 47.7% 
-			top: -65% 
-			+s(features_header)
-			opacity: 0.2 
+		+theme_title
 	&__text
-		color: #777f84
-		font-size: 15px
-		// width: 34% 
+		+theme_text
 	&__header + &__text
 		width: 468px
-		margin: 30px auto 0
+		margin: 13px auto 0
 		text-align: center
 	&__inner
 		+clr
-		padding: 120px 0 
-		border-bottom: 1px solid #ddd
+		padding: 120px 0
+		&:not(:last-child)
+			border-bottom: 1px solid #ddd
 		&:nth-child(2n) .features__block
 			float: right
 		&:nth-child(2n) .features__img
