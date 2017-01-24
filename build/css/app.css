@@ -122,10 +122,11 @@ body {
   }
 }
 
-.wrapper, .customers__company {
+.wrapper, .customers__company, .contacts__inner {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 12px;
+  padding-*zoom: 1;
 }
 
 .button {
@@ -631,7 +632,7 @@ body {
   background-image: url("../img/sprite.png");
   width: 34px;
   height: 32px;
-  background-position: -999px -239px;
+  background-position: -955px -293px;
 }
 
 .pricing__head.popular {
@@ -643,7 +644,7 @@ body {
   background-image: url("../img/sprite.png");
   width: 33px;
   height: 29px;
-  background-position: -1043px -239px;
+  background-position: -999px -293px;
 }
 
 .pricing__head.premium {
@@ -655,7 +656,7 @@ body {
   background-image: url("../img/sprite.png");
   width: 36px;
   height: 32px;
-  background-position: -953px -239px;
+  background-position: -909px -293px;
 }
 
 .pricing__value {
@@ -710,33 +711,6 @@ body {
 
 .pricing__button:hover {
   border: 3px solid #fdb352;
-}
-
-.customers__head {
-  background: url(../img/customers.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  text-align: center;
-  color: #ffffff;
-  padding: 50px 0;
-  width: 100%;
-  height: 100%;
-}
-
-.customers__title {
-  margin-top: 39px;
-  margin-bottom: 20px;
-  font-size: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.customers__text {
-  margin: 0 auto;
-  width: 468px;
-  font-size: 15px;
-  margin-bottom: 30px;
 }
 
 .customers__company {
@@ -828,6 +802,33 @@ body {
   font-size: 11px;
   font-weight: 500;
   line-height: 18px;
+}
+
+.headline {
+  background: url(../img/customers.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  text-align: center;
+  color: #ffffff;
+  padding: 50px 0;
+  width: 100%;
+  height: 100%;
+}
+
+.headline__title {
+  margin-top: 39px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.headline__text {
+  margin: 0 auto;
+  width: 468px;
+  font-size: 15px;
+  margin-bottom: 30px;
 }
 
 .about-us {
@@ -940,14 +941,265 @@ body {
   background-image: url("../img/sprite.png");
   width: 34px;
   height: 34px;
-  background-position: -909px -239px;
+  background-position: -1045px -148px;
 }
 
 .item__link.email {
   background-image: url("../img/sprite.png");
   width: 34px;
   height: 34px;
-  background-position: -1045px -148px;
+  background-position: -1015px -239px;
+}
+
+.events {
+  padding: 50px 0 200px;
+  background-color: #F7F8F9;
+}
+
+.events__header {
+  position: relative;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 3em;
+  margin: 27px auto 100px;
+}
+
+.events__header:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 47.7%;
+  top: 10%;
+  background-image: url("../img/sprite.png");
+  width: 43px;
+  height: 49px;
+  background-position: -992px -148px;
+  opacity: 0.2;
+}
+
+.events .slider {
+  width: 100%;
+  *zoom: 1;
+}
+
+.events .slider:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.events .slider__item {
+  float: left;
+  width: 20%;
+}
+
+.events__item {
+  width: 100%;
+  padding-right: 18.75%;
+}
+
+.events__line {
+  position: relative;
+  height: 3px;
+  width: 100%;
+  background-color: #777;
+  opacity: 0.2;
+  margin-bottom: 40px;
+}
+
+.events__line .dot {
+  display: block;
+  position: absolute;
+  top: -14px;
+  left: 0;
+  width: 27px;
+  height: 27px;
+  border: 3px solid #f7f8f9;
+  border-radius: 50%;
+  background-color: #f06c5f;
+}
+
+.events__line .dot:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0 5px rgba(255, 153, 51, 0.6);
+}
+
+.events__line .dot.is-active {
+  box-shadow: 0 0 0 10px rgba(135, 153, 163, 0.6);
+}
+
+.events__date {
+  color: #8799a3;
+  font-size: 13px;
+  margin-bottom: 17px;
+}
+
+.events__box {
+  background-color: #fff;
+  position: relative;
+  width: 100%;
+  height: 219px;
+  box-shadow: 0 5px 15px rgba(74, 83, 90, 0.1);
+  margin-bottom: 45px;
+}
+
+.events__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.events__title {
+  line-height: 18px;
+  color: #000000;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.events__about {
+  margin-top: 25px;
+  color: #777f84;
+  font-size: 13px;
+}
+
+.contacts .headline {
+  background: url(../img/contacts-bg.jpg);
+}
+
+.contacts__inner {
+  padding: 45px 115px;
+  *zoom: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+.contacts__inner:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.contacts__inner:last-child {
+  border-bottom: none;
+}
+
+.contacts__addres {
+  float: left;
+  width: 50%;
+  padding-right: 50px;
+  margin-right: 154px;
+  font-size: 17px;
+  line-height: 30px;
+  color: #777f84;
+}
+
+.contacts__addres span {
+  color: #404040;
+  font-weight: 500;
+}
+
+.contacts__communication {
+  font-size: 17px;
+  line-height: 30px;
+  color: #777f84;
+}
+
+.contacts__communication span {
+  color: #f06c5f;
+  font-weight: 500;
+}
+
+.contacts__form .button {
+  margin: 50px 0 53px;
+}
+
+.contacts__input {
+  width: 100%;
+  border-bottom: 4px solid #d2d4d6;
+  line-height: 52px;
+  height: 56px;
+  margin-top: 28px;
+}
+
+.contacts__input:focus {
+  border-color: #f06c5f;
+}
+
+.phones {
+  font-size: 0;
+  *zoom: 1;
+}
+
+.phones:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.phones .phone {
+  float: left;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.phones .phone:not(:last-child) {
+  margin-right: 180px;
+}
+
+.phones .phone__title {
+  color: #000000;
+  font-weight: 500;
+}
+
+.phones .phone__number {
+  color: #777f84;
+  font-weight: 400;
+}
+
+.footer {
+  background-color: #F7F8F9;
+  height: 100%;
+  padding: 20px 0 144px;
+  *zoom: 1;
+}
+
+.footer:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.footer__copyright {
+  margin-top: 8px;
+  color: #777f84;
+  font-size: 13px;
+  line-height: 40px;
+}
+
+.footer__social {
+  float: right;
+}
+
+.footer__link {
+  display: inline-block;
+}
+
+.footer__link.fb {
+  background-image: url("../img/sprite.png");
+  width: 43px;
+  height: 44px;
+  background-position: -909px -239px;
+}
+
+.footer__link.in {
+  background-image: url("../img/sprite.png");
+  width: 43px;
+  height: 44px;
+  background-position: -962px -239px;
 }
 
 /*# sourceMappingURL=app.css.map */

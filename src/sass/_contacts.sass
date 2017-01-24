@@ -1,0 +1,55 @@
+.contacts
+	.headline
+		background: url(../img/contacts-bg.jpg) 
+	&__inner
+		@extend .wrapper
+		padding: 45px 115px
+		+clr
+		border-bottom: 1px solid #ddd 
+		&:last-child
+			border-bottom: none
+	&__addres
+		float: left
+		width: 50% 
+		padding-right: 50px 
+		margin-right: 154px 
+		font-size: 17px
+		line-height: 30px
+		color: #777f84
+		span
+			color: #404040
+			font-weight: 500
+	&__communication
+		font-size: 17px
+		line-height: 30px
+		color: #777f84
+		span
+			color: #f06c5f
+			font-weight: 500
+	&__form
+		.button
+			margin: 50px 0 53px
+	&__input
+		width: 100% 
+		border-bottom: 4px solid #d2d4d6
+		line-height: 52px
+		height: 56px 
+		margin-top: 28px 
+		&:focus
+			border-color: #f06c5f
+.phones
+	font-size: 0
+	+clr
+	.phone
+		float: left
+		font-size: 17px
+		line-height: 30px
+		&:not(:last-child)
+			margin-right: 180px 
+		&__title
+			color: #000000
+			font-weight: 500
+		&__number
+			color: #777f84
+			font-weight: 400
+		
