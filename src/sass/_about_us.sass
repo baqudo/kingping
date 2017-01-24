@@ -1,0 +1,69 @@
+.about-us
+	background-color: #f06c5f
+	color: #ffffff
+	text-align: center
+	&__head
+		position: relative
+		padding-top: 94px 
+		font-size: 20px
+		font-weight: 700
+		text-transform: uppercase
+		margin-bottom: 41px
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			top: -22px 
+			left: 46.1%
+			+s(logo-m) 
+	&__title
+		font-size: 25px
+		padding: 55px 90px
+		border-top: 3px solid #d65346
+		border-bottom: 3px solid #d65346
+	&__info
+		+clr
+		margin-top: 55px 
+	&__text
+		margin: 0 2.5% 
+		width: 40.5% 
+		float: left
+		font-size: 15px
+		text-align: left
+	&__items
+		+clr
+		width: 100% 
+		font-size: 0
+		margin-bottom: 110px
+		margin-top: 73px 
+	.start
+		background-color: #de5a4d
+		span
+			color: #fff
+.item
+
+	display: inline-block
+	width: 25% 
+	&__photo
+		border-radius: 50% 
+		border: 5px solid #fff
+		box-sizing: border-box 
+		max-width: 150px 
+		max-height: 150px 
+	&__name
+		margin-top: 30px 
+		font-size: 17px
+		font-weight: 500
+	&__position
+		color: #ffbc64
+		font-size: 13px
+		margin-top: 2px 
+		margin-bottom: 22px 
+	&__links
+	&__link
+		margin: 0 2px 
+		display: inline-block
+		&.linked-in
+			+s(linked-in)
+		&.email
+			+s(email)
