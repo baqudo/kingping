@@ -1,4 +1,5 @@
 .events
+	overflow: hidden
 	padding: 50px 0 200px 
 	background-color: #F7F8F9 
 	&__header
@@ -48,6 +49,8 @@
 		margin-bottom: 45px 
 	&__img
 		+vcenter
+		max-width: 100%
+		max-height: 100% 
 	&__title
 		line-height: 18px
 		color: #000000
@@ -57,3 +60,9 @@
 		margin-top: 25px 
 		color: #777f84
 		font-size: 13px
+
++r(801)
+	.events
+		padding: 0 0 20px 
+		&__header
+			margin: 10px auto 30px

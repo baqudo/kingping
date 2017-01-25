@@ -1,15 +1,12 @@
 .global
 	position: relative
 	max-width: 100%
-	height: 100%
-	background: url(../img/global3.png) no-repeat center top 55%
-	
 	&__map
 		color: #fff 
 		text-align: center
 		position: relative
 	&__title
-		margin-top: 124px 
+		margin-top: 24px 
 		margin-bottom: 46px 
 		font-size: 1.9375em
 		text-transform: uppercase
@@ -18,7 +15,7 @@
 		max-width: 775px 
 		color: #a0bcd3
 		font-size: 0.9375em
-		line-height: 25px
+		line-height: 1.4em
 	&__company
 		position: relative
 		.company
@@ -65,21 +62,64 @@
 			top: 444px 
 			left: 62.5%
 	&__start
-		position: absolute
-		top: 86.3% 
+		margin-top: 589px
 		background-color: #19252e
 .start
 	width: 100% 
 	padding:  60px 0
 	color: #fff 
 	+clr
-	.start__text
-		font-size: 19px
-		font-weight: 400
+	&__text
+		font-size: 1.1875em
 		span
 			color: #7e97aa
 			font-weight: 500
-	.start__button
+	&__button
 		float: right
 		margin-left: 200px 
 
++r(860)
+	.global__title
+		margin-top: 5px 
+		margin-bottom: 10px 
+		font-size: 1.4em
+	.global__start
+		margin-top: 389px
+	.start
+		width: 100% 
+		padding:  30px 0
+		&__button
+			margin-left: 20px 
++r(680)
+	.start__text
+		font-size: 1em 
++r(601)
+	.global__start
+		margin-top: 289px
+	.global__text
+		font-size: 0.8em
++r(520)
+	.start__text
+		font-size: 0.9em 
+
++r(440)
+	.global__start
+		margin-top: 200px
+	.start
+		padding: 10px 0
+		&__button
+			margin-top: 7px 
++r(390)
+	.global__start
+		margin-top: 0
+	.global__map
+		margin-bottom: 200px
++r(345)
+	.global__map
+		margin-bottom: 150px
+	.global__title
+		font-size: 1.2em
+	.start__button
+		float: none
+		margin: 0 auto 
+		// margin-left: 200px 

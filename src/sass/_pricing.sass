@@ -1,5 +1,5 @@
 .pricing
-	padding-top: 78px
+	overflow: hidden
 	background-color: #f7f8f9
 	padding: 78px 0 50px
 	&__header
@@ -7,7 +7,7 @@
 	&__text
 		+theme_text
 	&__header + &__text
-		width: 468px
+		max-width: 468px
 		margin: 13px auto 50px
 		text-align: center
 	&__items
@@ -15,43 +15,39 @@
 		height: 100%  
 		+clr
 	&__item
+		+clr
 		width: 33% 
 		float: left
 		margin: auto
 		text-align: center
-	&__head
-		position: relative
+	&__title
+		margin-bottom: 22px 
 		font-size: 14px
 		font-weight: 700
 		text-transform: uppercase
-		&:before
-			content: ""
-			display: block
-			margin: 0 auto 15px
-			background-color: #ffffff
-			border-radius: 50%
-			width: 69px
-			height: 69px
+	&__head
+		position: relative
+		display: block
+		margin: 0 auto 14px
+		background-color: #fff
+		border-radius: 50%
+		width: 69px
+		height: 69px
 		&:after
-			position: absolute
 			content: ""
-			display: block
-			top: 17% 
-			left: 45% 
-		&.standard
-			color: #afbe96
-			&:after
-				+s(like)
-		&.popular
-			color: #627787
-			&:after
-				top: 22% 
-				+s(heart)
-		&.premium
-			color: #f3897f
-			&:after
-				left: 44%
-				+s(star)
+			+vcenter
+	.standard
+		color: #afbe96
+		&:after
+			+s(like)
+	.popular
+		color: #627787
+		&:after
+			+s(heart)
+	.premium
+		color: #f3897f
+		&:after
+			+s(star)
 	&__value
 		color: #000000
 		font-size: 2.8125em
@@ -67,6 +63,7 @@
 			padding-bottom: 30px 
 			border-bottom: 1px solid #ddd
 	&__list
+		display: block
 		margin-top: 30px 
 	&__components
 		font-size: 13px
@@ -79,7 +76,7 @@
 	&__about
 		+theme_text
 		font-size: 13px 
-		width: 528px
+		max-width: 528px
 		margin: 92px auto 0
 		text-align: center 
 	&__button
@@ -89,3 +86,34 @@
 		border-color: transparent 
 		&:hover
 			border: 3px solid #fdb352
+			
++r(801)
+	.pricing
+		padding: 28px 0 20px
+		&__about
+			margin: 22px auto 0
+		&__button
+			margin: 20px auto 10px
+
++r(766)
+	.pricing__value:after
+		width: 50% 
+
++r(501)
+	.pricing__item
+		width: 100% 
+		border-bottom: 1px solid #ddd 
+		margin-bottom: 10px 
+		padding-bottom: 5px 
+		.pricing__block
+			float: left
+			width: 50% 
+		.pricing__list
+			float: right
+			width: 50% 
+		.pricing__value
+			font-size: 1.8125em
+			&:after
+				width: 100% 
+	.pricing__header + .pricing__text
+		margin-bottom: 10px 

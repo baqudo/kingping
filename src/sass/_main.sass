@@ -1,13 +1,32 @@
 .top__inner
 	width: 100%
-	height: 1000px
+	height: 100%
+	padding-bottom: 224px 
 	background: #333 url(../img/top_bg1.jpg) 
 	+cover
 .bottom__inner
 	width: 100%
-	height: 1000px
+	// height: 1000px
+	padding-top: 100px
 	background-color: #1c2932
-	background-image: url(../img/map1.jpg)
-	+cover
-	padding: 1px 0
-	
+	background-image:  url(../img/map-items.png), url(../img/map1.jpg)
+	background-repeat: no-repeat, no-repeat
+	background-position: center top 54%, center top
+	background-size: auto, auto
+
++r(985)
+	.bottom__inner
+		background-position: center top 54%, center
+		background-size: contain, 150%
++r(860)
+	.top__inner
+		padding-bottom: 0 
+	.bottom__inner
+		padding-top: 30px 
+
++r(500)
+	.bottom__inner
+		background-position: center top 60%, center top 60%
++r(330)
+	.bottom__inner
+		background-position: center top 65%, center top 70%

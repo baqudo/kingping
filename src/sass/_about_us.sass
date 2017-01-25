@@ -2,6 +2,7 @@
 	background-color: #f06c5f
 	color: #ffffff
 	text-align: center
+	// overflow: hidden
 	&__head
 		position: relative
 		padding-top: 94px 
@@ -11,13 +12,11 @@
 		margin-bottom: 41px
 		&:before
 			content: ""
-			display: block
-			position: absolute
-			top: -22px 
-			left: 46.1%
+			+vcenter
+			top: 18px 
 			+s(logo-m) 
 	&__title
-		font-size: 25px
+		font-size: 1.5625em
 		padding: 55px 90px
 		border-top: 3px solid #d65346
 		border-bottom: 3px solid #d65346
@@ -26,7 +25,7 @@
 		margin-top: 55px 
 	&__text
 		margin: 0 2.5% 
-		width: 40.5% 
+		max-width: 40.5% 
 		float: left
 		font-size: 15px
 		text-align: left
@@ -34,16 +33,17 @@
 		+clr
 		width: 100% 
 		font-size: 0
-		margin-bottom: 110px
-		margin-top: 73px 
+		margin-bottom: 100px
+		margin-top: 63px 
 	.start
 		background-color: #de5a4d
 		span
 			color: #fff
 .item
-
 	display: inline-block
 	width: 25% 
+	min-width: 160px
+	margin: 10px 0  
 	&__photo
 		border-radius: 50% 
 		border: 5px solid #fff
@@ -67,3 +67,22 @@
 			+s(linked-in)
 		&.email
 			+s(email)
+
++r(801)
+	.about-us
+		&__head
+			padding-top: 64px 
+			margin-bottom: 21px
+		&__title
+			padding: 25px
+		&__info
+			margin-top: 15px 
+		&__text
+			max-width: 100% 
+			float: none
+		&__items
+			margin-bottom: 20px
+			margin-top: 13px 
++r(600)
+	.about-us__title
+		font-size: 1.2em

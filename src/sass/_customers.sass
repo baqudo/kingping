@@ -1,8 +1,8 @@
 .customers
-
 	&__company
 		@extend .wrapper
 		+clr
+		overflow: hidden
 	&__button
 		display: block
 		margin: 97px auto 136px
@@ -18,7 +18,7 @@
 		position: relative
 		padding-top: 210px 
 		float: left
-		width: 50%
+		max-width: 50%
 		text-align: center 
 		&__logo
 			display: block
@@ -31,7 +31,7 @@
 			max-height: 100%
 		&__about
 			+theme_text
-			width: 75%
+			max-width: 75%
 			margin: 0 auto
 		&__ceo
 			position: relative
@@ -76,6 +76,36 @@
 		
 	&__text
 		margin: 0 auto 
-		width: 468px
+		max-width: 468px
 		font-size: 15px
 		margin-bottom: 30px 
+
++r(801)
+	.headline
+		padding: 20px 0 
+		&__title
+			margin-top: 15px 
+			margin-bottom: 10px 
+		&__text
+			margin-bottom: 10px 
+	.customers
+		&__company
+			font-size: 0 
+		&__button
+			margin: 17px auto 36px
+		.company
+			font-size: 16px 
+			float: none
+			display: inline-block
+			padding: 10px 0 20px
+			&__ceo
+				margin-top: 13px
+		.company__logo
+				position: relative
+				bottom: 0
++r(595)
+	.customers
+		.company
+			max-width: 100% 
+			&__ceo
+				margin-left: 20%
