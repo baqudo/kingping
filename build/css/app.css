@@ -324,13 +324,13 @@ body {
   font-size: 16px;
   line-height: 1.2em;
   font-weight: 400;
-  font-family: "Gotham Pro";
+  font-family: GothamPro;
 }
 
 @font-face {
   body {
-    font-family: Gotham Pro;
-    src: url("fonts/GothamProRegular.woff2") format("woff2"), url("fonts/GothamProRegular.woff") format("woff");
+    font-family: GothamPro-Medium;
+    src: url("fonts/GothamPro-Medium.woff2") format("woff2"), url("fonts/GothamPro-Medium.woff") format("woff");
     font-weight: normal;
     font-style: normal;
   }
@@ -338,8 +338,8 @@ body {
 
 @font-face {
   body {
-    font-family: Gotham Pro;
-    src: url("fonts/GothamProMedium.woff2") format("woff2"), url("fonts/GothamProMedium.woff") format("woff");
+    font-family: GothamPro-Bold;
+    src: url("fonts/GothamPro-Bold.woff2") format("woff2"), url("fonts/GothamPro-Bold.woff") format("woff");
     font-weight: normal;
     font-style: normal;
   }
@@ -347,16 +347,7 @@ body {
 
 @font-face {
   body {
-    font-family: Gotham Pro;
-    src: url("fonts/GothamProBold.woff2") format("woff2"), url("fonts/GothamProBold.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-  }
-}
-
-@font-face {
-  body {
-    font-family: Gotham Pro;
+    font-family: GothamPro;
     src: url("fonts/GothamPro.woff2") format("woff2"), url("fonts/GothamPro.woff") format("woff");
     font-weight: normal;
     font-style: normal;
@@ -396,7 +387,8 @@ a:hover {
   width: 100%;
   height: 100%;
   padding-bottom: 224px;
-  background: #333 url(../img/top_bg1.jpg);
+  background-color: #1c2932;
+  background-image: url(../img/top_bg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -428,7 +420,7 @@ a:hover {
   float: left;
 }
 
-.header .header__lang {
+.header__lang {
   float: right;
   margin-right: 50px;
   margin-top: 17px;
@@ -438,14 +430,14 @@ a:hover {
   text-transform: uppercase;
 }
 
-.header .header__lang .lang__link {
+.header__lang .lang__link {
   display: block;
   display: inline-block;
   margin-left: 13px;
   color: #a38256;
 }
 
-.header .header__lang .lang__link.is-active {
+.header__lang .lang__link.is-active {
   color: #fff;
 }
 
@@ -905,6 +897,7 @@ a:hover {
 .pricing__value {
   color: #000000;
   font-size: 2.8125em;
+  line-height: 1.2em;
   font-weight: 500;
 }
 

@@ -51,7 +51,6 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-	$dot = $('.dot')
 	$('.slider').slick({
 	  infinite: true,
 	  speed: 600,
