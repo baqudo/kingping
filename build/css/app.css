@@ -1760,6 +1760,13 @@ a:hover {
   .features__link{
     margin-top: 14px;
   }
+  .events__box{
+    height: 169px;
+    margin-bottom: 10px;
+  }
+  .events__about{
+    margin-top: 5px;
+  }
   .events .slider:before, .events .slider:after{
     display: none;
   }
@@ -1832,6 +1839,9 @@ a:hover {
 }
 
 @media only screen and (max-width: 360px){
+  .events__box{
+    height: 119px;
+  }
   .events .slider{
     width: 80%;
     margin: 0 10px;
