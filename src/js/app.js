@@ -28,12 +28,12 @@ $(document).ready(function () {
 			return;
 		} else {
 			$menu__button.removeClass('is-active');
-			$menu.slideUp(2000);
+			$menu.slideUp(1000);
 		}
 	})
 	$menu__button.on('click', function () {
 		$(this).toggleClass('is-active');
-		$menu.slideToggle(2000);
+		$menu.slideToggle(1000);
 	});
 
 

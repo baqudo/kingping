@@ -388,7 +388,7 @@ a:hover {
 }
 
 .button:hover {
-  border: none;
+  border-color: transparent;
   box-shadow: 0px 0px 4px 2px #711;
 }
 
@@ -462,12 +462,13 @@ a:hover {
   font-family: "Proxima Nova";
   font-size: 13px;
   font-weight: 600;
-  line-height: 30px;
+  line-height: 2em;
   text-transform: uppercase;
 }
 
 .menu__link:hover {
   color: #fdb352;
+  opacity: 1;
 }
 
 .menu__button {
@@ -1498,6 +1499,12 @@ a:hover {
   box-shadow: 0 0 0 10px rgba(135, 153, 163, 0.6);
 }
 
+@media only screen and (max-width: 1090px){
+  .menu{
+    right: 0;
+  }
+}
+
 @media only screen and (max-width: 985px){
   .bottom__inner{
     background-position: center top 54%, center;
@@ -1651,6 +1658,16 @@ a:hover {
 }
 
 @media only screen and (max-width: 650px){
+  .menu{
+    top: 100%;
+  }
+  .menu__link{
+    padding: 5px 30px;
+    margin: -2px 0;
+    background-color: #333;
+    border: 2px solid #fdb352;
+    opacity: 0.8;
+  }
   .demo-acc{
     margin-top: 50px;
     width: 100%;

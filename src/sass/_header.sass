@@ -33,11 +33,11 @@
 		font-family: "Proxima Nova"
 		font-size: 13px
 		font-weight: 600
-		line-height: 30px
+		line-height: 2em
 		text-transform: uppercase
 		&:hover
 			color: #fdb352
-
+			opacity: 1
 .menu__button
 	background: transparent
 	border: none  
@@ -68,7 +68,18 @@
 	&:hover
 		text-decoration: none
 		color: #fff
-
++r(1090)
+	.menu
+		right: 0
++r(650)
+	.menu
+		top: 100% 
+		&__link
+			padding: 5px 30px
+			margin: -2px 0 
+			background-color: #333
+			border: 2px solid #fdb352
+			opacity: 0.8 
 +r(500)
 	.header
 		padding-top: 14px 
