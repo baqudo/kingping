@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5,
 h6, p, blockquote, pre, a, abbr, acronym, address, big,
 cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
@@ -78,10 +79,250 @@ html {
   fill: #000;
 }
 
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+}
+
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+/* Slider */
+.slick-loading .slick-list {
+  background: #fff url("../img/ajax-loader.gif") center center no-repeat;
+}
+
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: url("../fonts/slick.eot");
+  src: url("../fonts/slick.eot?#iefix") format("embedded-opentype"), url("../fonts/slick.woff") format("woff"), url("../fonts/slick.ttf") format("truetype"), url("../fonts/slick.svg#slick") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Arrows */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  margin-top: -10px;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.slick-prev:hover, .slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  outline: none;
+  background: transparent;
+  color: transparent;
+}
+
+.slick-prev:hover:before, .slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.25;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  color: white;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev {
+  left: -25px;
+}
+
+[dir="rtl"] .slick-prev {
+  left: auto;
+  right: -25px;
+}
+
+.slick-prev:before {
+  content: "←";
+}
+
+[dir="rtl"] .slick-prev:before {
+  content: "→";
+}
+
+.slick-next {
+  right: -25px;
+}
+
+[dir="rtl"] .slick-next {
+  left: -25px;
+  right: auto;
+}
+
+.slick-next:before {
+  content: "→";
+}
+
+[dir="rtl"] .slick-next:before {
+  content: "←";
+}
+
+/* Dots */
+.slick-dots {
+  position: absolute;
+  bottom: 22px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  width: 100%;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.slick-dots li button {
+  display: block;
+  padding: 3px;
+  background: none;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  color: red;
+  cursor: pointer;
+}
+
+.slick-dots li button:before {
+  content: "";
+  display: block;
+  height: 10px;
+  width: 10px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: #979795;
+  transition: all 0.1s ease;
+}
+
+.slick-dots li button:hover:before {
+  background: #4E4E4E;
+}
+
+.slick-dots li.slick-active button:before {
+  background: #4E4E4E;
+}
+
 body {
   background: #FFF;
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 1.2em;
   font-weight: 400;
   font-family: "Gotham Pro";
 }
@@ -144,6 +385,11 @@ a:hover {
   background-color: rgba(185, 53, 99, 0);
   text-transform: uppercase;
   color: #fff;
+}
+
+.button:hover {
+  border: none;
+  box-shadow: 0px 0px 4px 2px #711;
 }
 
 .top__inner {
@@ -706,10 +952,6 @@ a:hover {
   border-color: transparent;
 }
 
-.pricing__button:hover {
-  border: 3px solid #fdb352;
-}
-
 .customers__company {
   *zoom: 1;
   overflow: hidden;
@@ -729,10 +971,6 @@ a:hover {
   font-size: 14px;
   font-weight: 700;
   line-height: 25px;
-}
-
-.customers__button:hover {
-  border: 3px solid #fdb352;
 }
 
 .customers .company {
@@ -984,14 +1222,26 @@ a:hover {
 }
 
 .events .slider {
-  width: 100%;
-  *zoom: 1;
+  position: relative;
+  width: 60%;
+  margin: 0 20%;
 }
 
-.events .slider:after {
-  content: " ";
-  display: table;
-  clear: both;
+.events .slider:before, .events .slider:after {
+  content: '';
+  position: absolute;
+  top: -30px;
+  left: 100%;
+  display: block;
+  width: 35%;
+  height: 150%;
+  background-color: #F7F8F9;
+  opacity: 0.7;
+}
+
+.events .slider:before {
+  left: -37%;
+  z-index: 10;
 }
 
 .events .slider__item {
@@ -1008,8 +1258,7 @@ a:hover {
   position: relative;
   height: 3px;
   width: 100%;
-  background-color: #777;
-  opacity: 0.2;
+  background-color: rgba(119, 119, 119, 0.2);
   margin-bottom: 40px;
 }
 
@@ -1027,10 +1276,11 @@ a:hover {
 
 .events__line .dot:hover {
   cursor: pointer;
-  box-shadow: 0 0 0 5px rgba(255, 153, 51, 0.6);
+  box-shadow: 0 0 0 10px rgba(135, 153, 163, 0.6);
 }
 
 .events__line .dot.is-active {
+  z-index: 1000;
   box-shadow: 0 0 0 10px rgba(135, 153, 163, 0.6);
 }
 
@@ -1071,6 +1321,11 @@ a:hover {
   margin-top: 25px;
   color: #777f84;
   font-size: 13px;
+}
+
+.slick-current .events__line .dot {
+  z-index: 1000;
+  box-shadow: 0 0 0 10px rgba(135, 153, 163, 0.6);
 }
 
 .contacts .headline {
@@ -1208,406 +1463,367 @@ a:hover {
   background-position: -316px -176px;
 }
 
-@media only screen and (max-width: 985px) {
+.slick-list {
+  overflow: visible;
+  margin-left: 6px;
+}
 
-  .bottom__inner {
+.line {
+  position: relative;
+  height: 3px;
+  width: 100%;
+  background-color: #777;
+  opacity: 0.2;
+  margin-bottom: 40px;
+}
+
+.line .dot {
+  display: block;
+  position: absolute;
+  top: -14px;
+  left: 0;
+  width: 27px;
+  height: 27px;
+  border: 3px solid #f7f8f9;
+  border-radius: 50%;
+  background-color: #f06c5f;
+}
+
+.line .dot:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0 5px rgba(255, 153, 51, 0.6);
+}
+
+.line .dot.is-active {
+  box-shadow: 0 0 0 10px rgba(135, 153, 163, 0.6);
+}
+
+@media only screen and (max-width: 985px){
+  .bottom__inner{
     background-position: center top 54%, center;
     background-size: contain, 150%;
   }
 }
 
-@media only screen and (max-width: 958px) {
-
-  .contacts__inner {
+@media only screen and (max-width: 958px){
+  .contacts__inner{
     padding: 25px 45px;
   }
 }
 
-@media only screen and (max-width: 900px) {
-
-  .footer {
+@media only screen and (max-width: 900px){
+  .footer{
     padding: 10px 0;
   }
 }
 
-@media only screen and (max-width: 860px) {
-
-  .top__inner {
+@media only screen and (max-width: 860px){
+  .top__inner{
     padding-bottom: 0;
   }
-
-  .bottom__inner {
+  .bottom__inner{
     padding-top: 30px;
   }
-
-  .global__title {
+  .global__title{
     margin-top: 5px;
     margin-bottom: 10px;
     font-size: 1.4em;
   }
-
-  .global__start {
+  .global__start{
     margin-top: 389px;
   }
-
-  .start {
+  .start{
     width: 100%;
     padding: 30px 0;
   }
-
-  .start__button {
+  .start__button{
     margin-left: 20px;
   }
 }
 
-@media only screen and (max-width: 850px) {
-
-  .demo-acc {
+@media only screen and (max-width: 850px){
+  .demo-acc{
     margin-top: 100px;
   }
-
-  .demo-acc__title {
+  .demo-acc__title{
     font-size: 2.5em;
   }
 }
 
-@media only screen and (max-width: 819px) {
-
-  .contacts__addres {
+@media only screen and (max-width: 819px){
+  .contacts__addres{
     padding-right: 10px;
     margin-right: 10px;
   }
-
-  .phones .phone:not(:last-child) {
+  .phones .phone:not(:last-child){
     margin-right: 50px;
   }
 }
 
-@media only screen and (max-width: 801px) {
-
-  .features__block {
+@media only screen and (max-width: 801px){
+  .features__block{
     max-width: 40%;
     margin-top: 40px;
     margin-bottom: 40px;
   }
-
-  .features__header + .features__text {
+  .features__header + .features__text{
     max-width: 90%;
   }
-
-  .pricing {
+  .pricing{
     padding: 28px 0 20px;
   }
-
-  .pricing__about {
+  .pricing__about{
     margin: 22px auto 0;
   }
-
-  .pricing__button {
+  .pricing__button{
     margin: 20px auto 10px;
   }
-
-  .headline {
+  .headline{
     padding: 20px 0;
   }
-
-  .headline__title {
+  .headline__title{
     margin-top: 15px;
     margin-bottom: 10px;
   }
-
-  .headline__text {
+  .headline__text{
     margin-bottom: 10px;
   }
-
-  .customers__company {
+  .customers__company{
     font-size: 0;
   }
-
-  .customers__button {
+  .customers__button{
     margin: 17px auto 36px;
   }
-
-  .customers .company {
+  .customers .company{
     font-size: 16px;
     float: none;
     display: inline-block;
     padding: 10px 0 20px;
   }
-
-  .customers .company__ceo {
+  .customers .company__ceo{
     margin-top: 13px;
   }
-
-  .customers .company__logo {
+  .customers .company__logo{
     position: relative;
     bottom: 0;
   }
-
-  .about-us__head {
+  .about-us__head{
     padding-top: 64px;
     margin-bottom: 21px;
   }
-
-  .about-us__title {
+  .about-us__title{
     padding: 25px;
   }
-
-  .about-us__info {
+  .about-us__info{
     margin-top: 15px;
   }
-
-  .about-us__text {
+  .about-us__text{
     max-width: 100%;
     float: none;
   }
-
-  .about-us__items {
+  .about-us__items{
     margin-bottom: 20px;
     margin-top: 13px;
   }
-
-  .events {
+  .events{
     padding: 0 0 20px;
   }
-
-  .events__header {
+  .events__header{
     margin: 10px auto 30px;
   }
 }
 
-@media only screen and (max-width: 766px) {
-
-  .pricing__value:after {
+@media only screen and (max-width: 766px){
+  .pricing__value:after{
     width: 50%;
   }
 }
 
-@media only screen and (max-width: 680px) {
-
-  .button {
+@media only screen and (max-width: 680px){
+  .button{
     width: auto;
     height: auto;
     padding: 10px;
   }
-
-  .start__text {
+  .start__text{
     font-size: 1em;
   }
 }
 
-@media only screen and (max-width: 650px) {
-
-  .demo-acc {
+@media only screen and (max-width: 650px){
+  .demo-acc{
     margin-top: 50px;
     width: 100%;
   }
-
-  .demo-acc__title {
+  .demo-acc__title{
     font-size: 2em;
   }
-
-  .demo-acc__text {
+  .demo-acc__text{
     margin-right: 0;
   }
 }
 
-@media only screen and (max-width: 623px) {
-
-  .contacts__addres {
+@media only screen and (max-width: 623px){
+  .contacts__addres{
     float: none;
     max-width: 100%;
   }
-
-  .contacts__communication {
+  .contacts__communication{
     display: inline-block;
     margin-right: 15px;
   }
 }
 
-@media only screen and (max-width: 601px) {
-
-  .global__start {
+@media only screen and (max-width: 601px){
+  .global__start{
     margin-top: 289px;
   }
-
-  .global__text {
+  .global__text{
     font-size: 0.8em;
   }
 }
 
-@media only screen and (max-width: 600px) {
-
-  .about-us__title {
+@media only screen and (max-width: 600px){
+  .about-us__title{
     font-size: 1.2em;
   }
 }
 
-@media only screen and (max-width: 595px) {
-
-  .customers .company {
+@media only screen and (max-width: 595px){
+  .customers .company{
     max-width: 100%;
   }
-
-  .customers .company__ceo {
+  .customers .company__ceo{
     margin-left: 20%;
   }
 }
 
-@media only screen and (max-width: 520px) {
-
-  .start__text {
+@media only screen and (max-width: 520px){
+  .start__text{
     font-size: 0.9em;
   }
 }
 
-@media only screen and (max-width: 501px) {
-
-  .pricing__item {
+@media only screen and (max-width: 501px){
+  .pricing__item{
     width: 100%;
     border-bottom: 1px solid #ddd;
     margin-bottom: 10px;
     padding-bottom: 5px;
   }
-
-  .pricing__item .pricing__block {
+  .pricing__item .pricing__block{
     float: left;
     width: 50%;
   }
-
-  .pricing__item .pricing__list {
+  .pricing__item .pricing__list{
     float: right;
     width: 50%;
   }
-
-  .pricing__item .pricing__value {
+  .pricing__item .pricing__value{
     font-size: 1.8em;
   }
-
-  .pricing__item .pricing__value:after {
+  .pricing__item .pricing__value:after{
     width: 100%;
   }
-
-  .pricing__header + .pricing__text {
+  .pricing__header + .pricing__text{
     margin-bottom: 10px;
   }
 }
 
-@media only screen and (max-width: 500px) {
-
-  .bottom__inner {
+@media only screen and (max-width: 500px){
+  .bottom__inner{
     background-position: center top 60%, center top 60%;
   }
-
-  .header {
+  .header{
     padding-top: 14px;
   }
-
-  .demo-acc__title {
+  .demo-acc__title{
     font-size: 1.5em;
   }
-
-  .demo-acc__text {
+  .demo-acc__text{
     margin-top: 10px;
   }
-
-  .demo-acc__button {
+  .demo-acc__button{
     margin: 30px 0;
   }
-
-  .features {
+  .features{
     margin-top: 17px;
   }
-
-  .features__block {
+  .features__block{
     max-width: 44%;
     margin-top: 20px;
     margin-bottom: 20px;
   }
-
-  .features__title {
+  .features__title{
     margin-bottom: 10px;
   }
-
-  .features__link {
+  .features__link{
     margin-top: 14px;
   }
-
-  .contacts__inner {
+  .events .slider:before, .events .slider:after{
+    display: none;
+  }
+  .contacts__inner{
     padding: 15px 45px;
   }
-
-  .contacts__form .button {
+  .contacts__form .button{
     margin: 20px 0 3px;
   }
-
-  .contacts__input {
+  .contacts__input{
     margin-top: 5px;
   }
 }
 
-@media only screen and (max-width: 440px) {
-
-  .global__start {
+@media only screen and (max-width: 440px){
+  .global__start{
     margin-top: 200px;
   }
-
-  .start {
+  .start{
     padding: 10px 0;
   }
-
-  .start__button {
+  .start__button{
     margin-top: 7px;
   }
 }
 
-@media only screen and (max-width: 425px) {
-
-  .features__block {
+@media only screen and (max-width: 425px){
+  .features__block{
     max-width: 60%;
   }
-
-  .features__inner {
+  .features__inner{
     background-size: 40%;
   }
 }
 
-@media only screen and (max-width: 400px) {
-
-  .features__block {
+@media only screen and (max-width: 400px){
+  .features__block{
     max-width: 100%;
   }
-
-  .features__inner {
+  .features__inner{
     margin-top: 10px;
     padding-top: 110px;
     background-size: 70%;
     background-position: center top;
   }
-
-  .features__inner:nth-child(2n) {
+  .features__inner:nth-child(2n){
     background-position: center top;
   }
-
-  .features__inner.bg-1 .features__block {
+  .features__inner.bg-1 .features__block{
     margin-top: 0;
   }
 }
 
-@media only screen and (max-width: 390px) {
-
-  .global__start {
+@media only screen and (max-width: 390px){
+  .global__start{
     margin-top: 0;
   }
-
-  .global__map {
+  .global__map{
     margin-bottom: 200px;
   }
 }
 
-@media only screen and (max-width: 365px) {
-
-  .header__lang {
+@media only screen and (max-width: 365px){
+  .header__lang{
     position: absolute;
     top: 70px;
     margin-right: 0;
@@ -1615,25 +1831,28 @@ a:hover {
   }
 }
 
-@media only screen and (max-width: 345px) {
+@media only screen and (max-width: 360px){
+  .events .slider{
+    width: 80%;
+    margin: 0 10px;
+  }
+}
 
-  .global__map {
+@media only screen and (max-width: 345px){
+  .global__map{
     margin-bottom: 150px;
   }
-
-  .global__title {
+  .global__title{
     font-size: 1.2em;
   }
-
-  .start__button {
+  .start__button{
     float: none;
     margin: 0 auto;
   }
 }
 
-@media only screen and (max-width: 330px) {
-
-  .bottom__inner {
+@media only screen and (max-width: 330px){
+  .bottom__inner{
     background-position: center top 65%, center top 70%;
   }
 }

@@ -9,11 +9,11 @@ $(document).ready(function () {
 	var $menu = $('.menu'),
 		$menu__button = $('.menu__button'),
 		$body = $('body'),
-		$llink = $('.lang__link');
+		$llink = $('.lang__link'),
+		menu = $('#menu');
 
 	$llink.on('click', function() {
 		var $this = $(this);
-
 		if(!$this.hasClass('is-active')) {
 			$this.addClass('is-active');
 			$this.siblings().removeClass('is-active');
@@ -21,31 +21,69 @@ $(document).ready(function () {
 			return;
 		}
 	})
-
-	$body.on('click', function(e) {
+	$body.on('click', function() {
 		$this = $(this);
-		if ($this.hasClass('menu__button')) {
-			if(!$menu__button.hasClass('is-active')) {
-				$menu__button.addClass('is-active');
-				$menu.slideToggle();
-			} else {
-				$menu__button.removeClass('is-active');
-				$menu.slideUp();
-			}
+
+		if(!$this.hasClass('menu__button')) {
+			return;
 		} else {
-				$menu__button.removeClass('is-active');
-				$menu.slideUp();
-			}
+			$menu__button.removeClass('is-active');
+			$menu.slideUp(2000);
+		}
 	})
+	$menu__button.on('click', function () {
+		$(this).toggleClass('is-active');
+		$menu.slideToggle(2000);
+	});
+
+
+
+		// $('.slider').slick({
+		// 	centerMode: true,
+		// 	centerPadding: 20%,
+		// 	slidesToShow: 3,
+		// 	slidesToScroll: 1,
+		// 	infinite: true,
+		// 	dots: true
+		// });
+
 })
 
 
 $(document).ready(function () {
+	$dot = $('.dot')
 	$('.slider').slick({
-		infinite: true,
-		slidesToShow: 5,
-		slidesToScroll: 1,
-		arrows: true,
-		dots: true
+	  infinite: true,
+	  speed: 600,
+	  slidesToShow: 3, 
+	  slidesToScroll: 1,
+	  focusOnSelect: true,
+	  responsive: [
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 650,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
 	});
 })
+
+$(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+        //забираем идентификатор бока с атрибута href
+        var id  = $(this).attr('href'),
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
