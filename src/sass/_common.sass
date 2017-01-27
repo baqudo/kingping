@@ -1,23 +1,23 @@
-// @font-face 
-//   font-family: 'GothamPro-Medium'
-//   src: url('fonts/GothamPro-Medium.woff2') format('woff2'),
-//        url('fonts/GothamPro-Medium.woff') format('woff')
-//   font-weight: normal
-//   font-style: normal
-
-
-
-
++font("GothamProMedium", GothamProMedium)
+=GP_m
+  font-family: GothamProMedium, sans-serif 
++font("GothamProBold", GothamProBold)
+=GP_b
+  font-family: GothamProBold, sans-serif 
++font("GothamPro", GothamPro)
+=GP
+  font-family: GothamPro, sans-serif 
 
 =theme_text
   color: #777f84
-  font-size: 0.9375em
+  font-size: em(15)
+  line-height: em(25, 15) 
 =theme_title
   position: relative
   display: block
   text-align: center
-  font-size: 20px
-  font-weight: 700
+  font-size: em(20)
+  +GP_b
   text-transform: uppercase
   line-height: 3em 
   &:before
@@ -27,21 +27,19 @@
     left: 0 
     display: block
     width: 100%
-    height: 50px
+    height: em(50, 20)
     background: url(../img/features_header.png) no-repeat center
-    // +s(features_header)
     opacity: 0.2
+html
+  font-size: 100%
 
 body
   background: #FFF
-  font-size: 16px
+  +GP
+  font-size: 100%
   line-height: 1.2em
   font-weight: 400 
-  // +font(GothamPro Regular, GothamProRegular)
-  +font(GothamPro-Medium, GothamPro-Medium)
-  +font(GothamPro-Bold, GothamPro-Bold)
-  +font(GothamPro, GothamPro)
-  font-family: GothamPro 
+
 
 a
   text-decoration: none
@@ -59,10 +57,14 @@ a
   background-color: rgba(185, 53, 99, 0)
   text-transform: uppercase
   color: #fff
+  +GP_b
+  font-size: em(15)
+  transition: 0.4s
   &:hover
-    // background-color: #fdb352
+    border-radius: 5px 
     border-color: transparent
-    box-shadow: 0px 0px 4px 2px #711
+    background-color: rgba(185, 53, 99, 0.8)
+    filter: drop-shadow(-1px 1px 3px #000)
 
 +r(680)
   .button
