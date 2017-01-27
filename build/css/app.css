@@ -177,10 +177,6 @@ html {
 }
 
 /* Slider */
-.slick-loading .slick-list {
-  background: #fff url("../img/ajax-loader.gif") center center no-repeat;
-}
-
 /* Arrows */
 .slick-prev,
 .slick-next {
@@ -664,12 +660,6 @@ a:hover {
 
 .features__inner.bg-2 {
   background-image: url(../img/cpi-cpc.png);
-  background-size: 45%;
-  background-position: left top 48%;
-}
-
-.features__inner.bg-2 .features__block {
-  margin-top: 128px;
 }
 
 .features__inner.bg-3 {
@@ -1502,10 +1492,12 @@ a:hover {
   }
   .start{
     width: 100%;
-    padding: 30px 0;
+  }
+  .start__text{
+    margin: 10px 0;
   }
   .start__button{
-    margin-left: 20px;
+    margin-left: 5px;
   }
 }
 
@@ -1519,16 +1511,15 @@ a:hover {
 }
 
 @media only screen and (max-width: 819px){
-  .contacts__addres{
-    padding-right: 10px;
-    margin-right: 10px;
-  }
   .phones .phone:not(:last-child){
     margin-right: 50px;
   }
 }
 
 @media only screen and (max-width: 801px){
+  .features__header{
+    margin-top: 15px;
+  }
   .features__block{
     max-width: 40%;
     margin-top: 40px;
@@ -1538,16 +1529,16 @@ a:hover {
     max-width: 90%;
   }
   .pricing{
-    padding: 28px 0 20px;
+    padding: 20px 0;
+  }
+  .pricing__header{
+    margin-top: 0px;
   }
   .pricing__about{
     margin: 22px auto 0;
   }
   .pricing__button{
     margin: 20px auto 10px;
-  }
-  .headline{
-    padding: 20px 0;
   }
   .headline__title{
     margin-top: 15px;
@@ -1556,24 +1547,24 @@ a:hover {
   .headline__text{
     margin-bottom: 10px;
   }
-  .customers__company{
-    font-size: 0;
-  }
   .customers__button{
     margin: 17px auto 36px;
   }
   .customers .company{
-    font-size: 1em;
+    margin-top: 10px;
     float: none;
     display: inline-block;
-    padding: 10px 0 20px;
+    width: 49%;
   }
   .customers .company__ceo{
     margin-top: 13px;
   }
   .customers .company__logo{
-    position: relative;
-    bottom: 0;
+    position: static;
+  }
+  .customers .company__about{
+    margin-top: 10px;
+    max-width: 99%;
   }
   .about-us__head{
     padding-top: 64px;
@@ -1585,7 +1576,8 @@ a:hover {
   .about-us__info{
     margin-top: 15px;
   }
-  .about-us__text{
+  .about-us__info_left, .about-us__info_right{
+    margin: 0;
     max-width: 100%;
     float: none;
   }
@@ -1601,6 +1593,12 @@ a:hover {
   }
 }
 
+@media only screen and (max-width: 773px){
+  .item{
+    width: 50%;
+  }
+}
+
 @media only screen and (max-width: 766px){
   .price__value:after{
     width: 50%;
@@ -1612,6 +1610,9 @@ a:hover {
     width: auto;
     height: auto;
     padding: 10px;
+  }
+  .global__start{
+    margin-top: 289px;
   }
   .start__text{
     font-size: 1em;
@@ -1642,20 +1643,16 @@ a:hover {
 }
 
 @media only screen and (max-width: 623px){
-  .contacts__addres{
+  .contacts__communications{
     float: none;
     max-width: 100%;
   }
-  .contacts__communication{
-    display: inline-block;
-    margin-right: 15px;
+  .contacts__addres{
+    max-width: 100%;
   }
 }
 
-@media only screen and (max-width: 601px){
-  .global__start{
-    margin-top: 289px;
-  }
+@media only screen and (max-width: 610px){
   .global__text{
     font-size: 0.8em;
   }
@@ -1664,11 +1661,13 @@ a:hover {
 @media only screen and (max-width: 600px){
   .about-us__title{
     font-size: 1.2em;
+    padding: 5px;
   }
 }
 
 @media only screen and (max-width: 595px){
   .customers .company{
+    width: 100%;
     max-width: 100%;
   }
   .customers .company__ceo{
@@ -1696,6 +1695,7 @@ a:hover {
   .pricing__item .price__list{
     float: right;
     width: 50%;
+    margin-top: 0;
   }
   .pricing__item .price__value{
     font-size: 1.8em;
@@ -1724,9 +1724,6 @@ a:hover {
   .demo-acc__button{
     margin: 30px 0;
   }
-  .features{
-    margin-top: 17px;
-  }
   .features__block{
     max-width: 44%;
     margin-top: 20px;
@@ -1749,7 +1746,7 @@ a:hover {
     display: none;
   }
   .contacts__inner{
-    padding: 15px 45px;
+    padding: 10px;
   }
   .contacts__form .button{
     margin: 20px 0 3px;
@@ -1834,8 +1831,7 @@ a:hover {
     font-size: 1.2em;
   }
   .start__button{
-    float: none;
-    margin: 0 auto;
+    float: right;
   }
 }
 
