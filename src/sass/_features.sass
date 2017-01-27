@@ -1,31 +1,37 @@
 .features
 	position: relative
-	margin-top: 77px 
+
 	border-bottom: 1px solid #ddd 
 	&__header
 		+theme_title
+		margin-top: 79px 
 	&__text
 		+theme_text
 	&__header + &__text
-		max-width: 468px
+		max-width: 518px
 		margin: 13px auto 0
 		text-align: center
+		line-height: 1.3em 
 	&__inner
 		+clr
 		border-top: 1px solid transparent 
-		background-position: right center 
+		background-position: right top 44% 
 		background-repeat: no-repeat 
-		background-size: 50%
+		background-size: 45%
 		&:not(:last-child)
 			border-bottom: 1px solid #ddd
 		&:nth-child(2n) 
-			background-position: left center 
+			background-position: left top 44% 
 			.features__block
 				float: right
 		&.bg-1
 			background-image: url(../img/smart-tds.png)
 		&.bg-2
 			background-image: url(../img/cpi-cpc.png)
+			background-size: 45%
+			background-position: left top 48% 
+			.features__block
+				margin-top: 128px 
 		&.bg-3
 			background-image: url(../img/adrotator.png)
 		&.bg-4
@@ -33,21 +39,21 @@
 		&.bg-5
 			background-image: url(../img/offer-checker.png)
 	&__block
-		max-width: 34%
-		margin-top: 140px 
+		max-width: 41%
+		margin-top: 111px 
 		margin-bottom: 120px 
 	&__title
 		color: #627787
-		font-size: 17px
-		font-weight: 500
+		font-size: em(17)
+		+GP_m
 		text-transform: uppercase
-		margin-bottom: 40px
+		margin-bottom: 35px
 	&__link
 		display: block
-		margin-top: 34px 
+		margin-top: 26px 
 		color: #f06c5f
-		font-size: 0.875em
-		font-weight: 500
+		font-size: em(14)
+		+GP_m
 		text-transform: uppercase
 +r(801)
 	.features__block

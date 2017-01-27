@@ -5,14 +5,16 @@
 	+clr
 	&__copyright
 		margin-top: 8px 
-		// float: left
 		color: #777f84
-		font-size: 13px
-		line-height: 40px
+		font-size: em(13)
+		line-height: em(40, 13)
 	&__social
 		float: right
 	&__link
 		display: inline-block
+		border-radius: 50%
+		&:hover
+			filter: drop-shadow(0 0 5px#fdb352) 
 		&.fb
 			+s(facebook)
 		&.in

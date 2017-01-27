@@ -9,23 +9,25 @@
 		&:last-child
 			border-bottom: none
 	&__addres
-		float: left
 		max-width: 50% 
-		padding-right: 50px 
-		margin-right: 154px 
-		font-size: 17px
-		line-height: 30px
+		font-size: em(17)
+		line-height: em(30, 17)
 		color: #777f84
 		span
 			color: #404040
-			font-weight: 500
-	&__communication
-		font-size: 17px
-		line-height: 30px
+			+GP_m
+	&__communications
+		float: right
+	&__link
+		display: block
+		font-size: em(17)
+		line-height: em(30, 17)
 		color: #777f84
 		span
 			color: #f06c5f
-			font-weight: 500
+			+GP_m
+		&:hover
+			text-decoration: none
 	&__form
 		.button
 			margin: 50px 0 53px
@@ -38,20 +40,18 @@
 		&:focus
 			border-color: #f06c5f
 .phones
-	font-size: 0
 	+clr
 	.phone
 		float: left
-		font-size: 17px
-		line-height: 30px
+		font-size: em(17)
+		line-height: em(30, 17)
 		&:not(:last-child)
-			margin-right: 180px 
+			margin-right: 125px 
 		&__title
 			color: #000000
-			font-weight: 500
+			+GP_m
 		&__number
 			color: #777f84
-			font-weight: 400
 		
 +r(958)
 	.contacts

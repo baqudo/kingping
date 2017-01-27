@@ -9,8 +9,7 @@ $(document).ready(function () {
 	var $menu = $('.menu'),
 		$menu__button = $('.menu__button'),
 		$body = $('body'),
-		$llink = $('.lang__link'),
-		menu = $('#menu');
+		$llink = $('.lang__link');
 
 	$llink.on('click', function() {
 		var $this = $(this);

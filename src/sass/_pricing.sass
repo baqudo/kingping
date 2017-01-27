@@ -1,14 +1,15 @@
 .pricing
 	overflow: hidden
 	background-color: #f7f8f9
-	padding: 78px 0 50px
+	padding: 50px 0
 	&__header
+		margin-top: 31px 
 		+theme_title
 	&__text
 		+theme_text
 	&__header + &__text
-		max-width: 468px
-		margin: 13px auto 50px
+		max-width: 518px
+		margin: 8px auto 44px
 		text-align: center
 	&__items
 		width: 100%
@@ -20,15 +21,27 @@
 		float: left
 		margin: auto
 		text-align: center
+	&__about
+		+theme_text
+		font-size: em(13) 
+		max-width: 658px
+		margin: 70px auto 0
+		text-align: center 
+	&__button
+		display: block
+		margin: 40px auto 85px
+		background-color: #f6a79f
+		border-color: transparent 
+.price
 	&__title
 		margin-bottom: 22px 
-		font-size: 14px
-		font-weight: 700
+		font-size: em(14)
+		+GP_b 
 		text-transform: uppercase
 	&__head
 		position: relative
 		display: block
-		margin: 0 auto 14px
+		margin: 0 auto 11px
 		background-color: #fff
 		border-radius: 50%
 		width: 69px
@@ -50,43 +63,30 @@
 			+s(star)
 	&__value
 		color: #000000
-		font-size: 2.8125em
-		line-height: 1.2em 
-		font-weight: 500
+		font-size: em(45)
+		line-height: 1.2em
+		+GP_m
 		&:after
 			content: "per month"
 			display: block
-			margin: 0 auto 
+			margin: -17px auto 0
 			width: 30% 
 			color: #a4a4a4
-			font-size: 0.4em
-			font-weight: 400
-			padding-bottom: 30px 
+			font-size: 13px
+			+GP
+			padding-bottom: 9px 
 			border-bottom: 1px solid #ddd
 	&__list
 		display: block
-		margin-top: 30px 
+		margin-top: 26px 
 	&__components
-		font-size: 13px
-		line-height: 30px
+		font-size: em(13)
+		line-height: em(30, 13)
 		color: #a4a4a4
-		font-weight: 400
 		&.is-active
 			color: #404040
-			font-weight: 500
-	&__about
-		+theme_text
-		font-size: 13px 
-		max-width: 528px
-		margin: 92px auto 0
-		text-align: center 
-	&__button
-		display: block
-		margin: 40px auto 100px
-		background-color: #f6a79f
-		border-color: transparent 
-		&:hover
-			// border: 3px solid #fdb352
+			+GP_m
+
 			
 +r(801)
 	.pricing
@@ -97,7 +97,7 @@
 			margin: 20px auto 10px
 
 +r(766)
-	.pricing__value:after
+	.price__value:after
 		width: 50% 
 
 +r(501)
@@ -106,13 +106,13 @@
 		border-bottom: 1px solid #ddd 
 		margin-bottom: 10px 
 		padding-bottom: 5px 
-		.pricing__block
+		.price__block
 			float: left
 			width: 50% 
-		.pricing__list
+		.price__list
 			float: right
 			width: 50% 
-		.pricing__value
+		.price__value
 			font-size: 1.8em
 			&:after
 				width: 100% 

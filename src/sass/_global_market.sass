@@ -6,77 +6,36 @@
 		text-align: center
 		position: relative
 	&__title
-		margin-top: 24px 
-		margin-bottom: 46px 
-		font-size: 1.9375em
+		margin-top: 25px 
+		margin-bottom: 48px 
+		font-size: em(31)
 		text-transform: uppercase
 	&__text
-		margin: 0 auto 
-		max-width: 775px 
+		margin: 0 10px 
 		color: #a0bcd3
-		font-size: 0.9375em
-		line-height: 1.4em
+		font-size: em(15)
+		line-height: em(25, 15)
 	&__company
 		position: relative
-		.company
-			position: absolute
-			display: inline-block
-			border-radius: 50%
-			box-shadow: 0 0 0 15px rgba(98, 119, 135, 0.1)
-			border: 5px solid #627787
-			background-color: #1c2932
-			margin: 35px
-			&__logo
-				+vcenter
-			&:hover
-				box-shadow: 0 0 0 15px rgba(205, 66, 54, 0.1)
-				border: 5px solid #a0294c
-		.company1
-			width: 297px
-			height: 297px 
-			top: 162px
-			left: 30.9%
-		.company2
-			width: 94px
-			height: 95px
-			top: 160px
-			left: 11.2%  
-		.company3
-			width: 132px 
-			height: 132px 
-			left: 68.3%
-			top: 167px  
-		.company4
-			width: 148px 
-			height: 148px 
-			top: 365px
-			left: 9.5% 
-		.company5
-			width: 127px 
-			height: 127px 
-			top: 362px 
-			left: 80.5%
-		.company6
-			width: 92px 
-			height: 92px 
-			top: 444px 
-			left: 62.5%
+
 	&__start
-		margin-top: 589px
+		margin-top: 588px
 		background-color: #19252e
 .start
 	width: 100% 
-	padding:  60px 0
+	padding:  10px 0
 	color: #fff 
 	+clr
 	&__text
-		font-size: 1.1875em
+		margin: 50px 0
+		font-size: em(19)
+		line-height: 1.5em 
 		span
 			color: #7e97aa
-			font-weight: 500
+			+GP_m
 	&__button
 		float: right
-		margin-left: 200px 
+		margin-left: 100px 
 
 +r(860)
 	.global__title
