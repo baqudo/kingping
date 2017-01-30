@@ -1,6 +1,7 @@
 .features
 	position: relative
 	border-bottom: 1px solid #ddd 
+	+clr
 	&__header
 		+theme_title
 		margin-top: 79px 
@@ -38,7 +39,6 @@
 		float: left
 		max-width: 41%
 		margin-top: 120px 
-		margin-bottom: 120px 
 	&__title
 		color: #627787
 		font-size: em(17)
@@ -74,8 +74,7 @@
 		&__block
 			float: none
 			max-width: 100%
-			margin-top: 20px 
-			margin-bottom: 20px 
+			margin: 20px 0
 		&__title
 			margin-bottom: 10px
 		&__link
