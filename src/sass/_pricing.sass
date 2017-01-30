@@ -47,35 +47,20 @@
 		width: 69px
 		height: 69px
 		&:after
+			content: "" 
 			+vcenter
 	.is-standard
-		color: #afbe96
-		// .icon
-		// 	stroke-width: 1px
-		// 	stroke: green
-		// 	fill: #afbe96
-		// 	height: 65px
-		// 	width: 65px  
+		color: #afbe96 
 		&:after
 			display: block
 			+s(like)
 	.is-popular
 		color: #627787
-		.icon
-		// 	stroke-width: 1px
-		// 	stroke: #627787
-		// 	max-height: 40px
-		// 	max-width: 40px  
-		// &:after
+		&:after
 			+s(heart)
 	.is-premium
 		color: #f3897f
-		.icon
-		// 	stroke: #f3897f
-		// 	stroke-width: 1px
-		// 	height: 35px
-		// 	width: 35px  
-		// &:after
+		&:after
 			+s(star)
 	&__value
 		color: #000000

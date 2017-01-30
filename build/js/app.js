@@ -65,12 +65,12 @@ $(document).ready(function () {
 			return;
 		} else {
 			$menu__button.removeClass('is-active');
-			$menu.slideUp(1000);
+			$menu.slideUp(400);
 		}
 	})
 	$menu__button.on('click', function () {
 		$(this).toggleClass('is-active');
-		$menu.slideToggle(1000);
+		$menu.slideToggle(400);
 	});
 
 
