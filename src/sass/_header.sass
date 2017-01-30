@@ -38,13 +38,13 @@
 		&:hover
 			color: #fdb352
 			opacity: 1
-.menu__button
+.burger
 	background: transparent
 	border: none  
 	float: right
 	margin-top: 15px 
 
-	.burger
+	&__item
 		box-sizing: border-box
 		display: block
 		position: relative
@@ -56,15 +56,14 @@
 
 .logo
 	+clr
-	&__img
-		float: left
-		margin-right: 18px 
-	&__text
 	display: block
 	color: #fff
 	font-size: em(33)
 	+GP_m
 	line-height: 1.6em
+	&__img
+		float: left
+		margin-right: 18px 
 	&:hover
 		text-decoration: none
 		color: #fff

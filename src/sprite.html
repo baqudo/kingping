@@ -69,13 +69,37 @@
       width: 30%;
     }
 
-    .icon-like {
-      width: 1.03em;
+    .icon-heart {
+      width: 2em;
+      height: 2em;
+      /*fill: none;*/
+      /*stroke: #a1adb7;*/
+      fill: initial;
+      stroke: #a1adb7;
+    }
+    .icon-ierg {
+      width: 1.1em;
       height: 1em;
+      /*fill: #fff;*/
+      /*stroke: initial;*/
+      fill: initial;
+      stroke: black;
+    }
+    .icon-like {
+      width: 2em;
+      height: 2em;
       /*fill: none;*/
       /*stroke: #afbe96;*/
       fill: initial;
-      stroke: black;
+      stroke: #afbe96;
+    }
+    .icon-star {
+      width: 2em;
+      height: 2em;
+      /*fill: none;*/
+      /*stroke: #f6a79f;*/
+      fill: initial;
+      stroke: #f6a79f;
     }
     
   </style>
@@ -91,10 +115,37 @@
   <ul class="icons-list">
     
     <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-heart" readonly>
+      <div class="icon-container">
+        <svg class="icon icon-heart">
+          <use xlink:href="/img/sprite.svg#icon-heart"></use>
+        </svg>
+      </div>
+    </li>
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-ierg" readonly>
+      <div class="icon-container">
+        <svg class="icon icon-ierg">
+          <use xlink:href="/img/sprite.svg#icon-ierg"></use>
+        </svg>
+      </div>
+    </li>
+    
+    <li class="icon-box">
       <input class="icon-class-name autoselect" type="text" value=".icon-like" readonly>
       <div class="icon-container">
         <svg class="icon icon-like">
           <use xlink:href="/img/sprite.svg#icon-like"></use>
+        </svg>
+      </div>
+    </li>
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-star" readonly>
+      <div class="icon-container">
+        <svg class="icon icon-star">
+          <use xlink:href="/img/sprite.svg#icon-star"></use>
         </svg>
       </div>
     </li>

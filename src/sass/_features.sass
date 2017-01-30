@@ -12,30 +12,32 @@
 		text-align: center
 		line-height: 1.3em 
 	&__inner
+		position: relative
+		max-height: 500px 
 		+clr
-		border-top: 1px solid transparent 
-		background-position: right top 44% 
-		background-repeat: no-repeat 
-		background-size: 45%
 		&:not(:last-child)
 			border-bottom: 1px solid #ddd
-		&:nth-child(2n) 
-			background-position: left top 44% 
+		&.to_left
+			.features__picture
+				float: left
 			.features__block
 				float: right
-		&.bg-1
-			background-image: url(../img/smart-tds.png)
-		&.bg-2
-			background-image: url(../img/cpi-cpc.png)
-		&.bg-3
-			background-image: url(../img/adrotator.png)
-		&.bg-4
-			background-image: url(../img/source-tracking.png)
-		&.bg-5
-			background-image: url(../img/offer-checker.png)
+	&__picture
+		float: right
+		margin: 100px 0 
+		height: 300px 
+		width: 55%
+	&__img
+		max-width: 100%
+		max-height: 100% 
+		position: relative
+		top: 50%
+		left: 50% 
+		transform: translate(-50%, -50%) 
 	&__block
+		float: left
 		max-width: 41%
-		margin-top: 111px 
+		margin-top: 120px 
 		margin-bottom: 120px 
 	&__title
 		color: #627787
@@ -54,41 +56,33 @@
 +r(801)
 	.features__header
 		margin-top: 15px 
+	.features__picture
+		margin: 30px 0 
 	.features__block
 		max-width: 40%
 		margin-top: 40px 
 		margin-bottom: 40px 
 	.features__header + .features__text
 		max-width: 90%
-
 +r(500)
 	.features
+		&__picture
+			height: 200px 
+			float: none
+			width: 100%
+			margin: 10px auto  
 		&__block
-			max-width: 44%
+			float: none
+			max-width: 100%
 			margin-top: 20px 
 			margin-bottom: 20px 
 		&__title
 			margin-bottom: 10px
 		&__link
-			margin-top: 14px 
+			margin-top: 14px
+		&__inner.to_left
+			.features__picture
+				float: none
+			.features__block
+				float: none
 
-+r(425)
-	.features
-		&__block
-			max-width: 60%
-		&__inner
-			background-size: 40%
-
-+r(400)
-	.features
-		&__block
-			max-width: 100%
-		&__inner
-			margin-top: 10px 
-			padding-top: 110px 
-			background-size: 70%
-			background-position: center top 
-			&:nth-child(2n)
-				background-position: center top
-			&.bg-1 .features__block 
-				margin-top: 0
