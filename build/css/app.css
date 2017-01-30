@@ -74,27 +74,32 @@ html {
 }
 
 .icon-heart {
-  width: 1.14em;
-  height: 1em;
+  width: 2.28em;
+  height: 2em;
   fill: none;
+  stroke: #a1adb7;
+  stroke-width: 1px;
+  stroke-max-width: 1px;
 }
 
 .icon-ierg {
-  width: 1.1em;
+  width: 2.2em;
   height: 1em;
   fill: #fff;
 }
 
 .icon-like {
-  width: 1.03em;
-  height: 1em;
+  width: 2.06em;
+  height: 2em;
   fill: none;
+  stroke: #afbe96;
 }
 
 .icon-star {
-  width: 1.13em;
-  height: 1em;
+  width: 2.26em;
+  height: 2em;
   fill: none;
+  stroke: #f6a79f;
 }
 
 /* Slider */
@@ -630,13 +635,17 @@ a:hover {
 
 .features__header:before {
   content: "";
-  position: absolute;
-  top: 10%;
-  left: 0;
   display: block;
-  width: 100%;
-  height: 2.5em;
-  background: url(../img/features_header.png) no-repeat center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  width: 43px;
+  height: 49px;
+  background-position: -263px -176px;
   opacity: 0.2;
 }
 
@@ -737,13 +746,17 @@ a:hover {
 
 .pricing__header:before {
   content: "";
-  position: absolute;
-  top: 10%;
-  left: 0;
   display: block;
-  width: 100%;
-  height: 2.5em;
-  background: url(../img/features_header.png) no-repeat center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  width: 43px;
+  height: 49px;
+  background-position: -263px -176px;
   opacity: 0.2;
 }
 
@@ -811,7 +824,7 @@ a:hover {
   background-image: url("../img/sprite.png");
   width: 34px;
   height: 32px;
-  background-position: -314px -267px;
+  background-position: 0px -324px;
 }
 
 .price__block.is-popular .price__title {
@@ -822,7 +835,7 @@ a:hover {
   background-image: url("../img/sprite.png");
   width: 33px;
   height: 29px;
-  background-position: -358px -267px;
+  background-position: -367px -267px;
 }
 
 .price__block.is-premium .price__title {
@@ -833,7 +846,7 @@ a:hover {
   background-image: url("../img/sprite.png");
   width: 36px;
   height: 32px;
-  background-position: -268px -267px;
+  background-position: -321px -267px;
 }
 
 .price__title {
@@ -1146,14 +1159,14 @@ a:hover {
   background-image: url("../img/sprite.png");
   width: 34px;
   height: 34px;
-  background-position: -224px -267px;
+  background-position: -277px -267px;
 }
 
 .item__link.icon-email {
   background-image: url("../img/sprite.png");
   width: 34px;
   height: 34px;
-  background-position: -180px -267px;
+  background-position: -233px -267px;
 }
 
 .events {
@@ -1175,13 +1188,17 @@ a:hover {
 
 .events__header:before {
   content: "";
-  position: absolute;
-  top: 10%;
-  left: 0;
   display: block;
-  width: 100%;
-  height: 2.5em;
-  background: url(../img/features_header.png) no-repeat center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  width: 43px;
+  height: 49px;
+  background-position: -263px -176px;
   opacity: 0.2;
 }
 
@@ -1427,14 +1444,14 @@ a:hover {
   background-image: url("../img/sprite.png");
   width: 43px;
   height: 44px;
-  background-position: -263px -176px;
+  background-position: -316px -176px;
 }
 
 .footer__link.in {
   background-image: url("../img/sprite.png");
   width: 43px;
   height: 44px;
-  background-position: -316px -176px;
+  background-position: -180px -267px;
 }
 
 .slick-list {

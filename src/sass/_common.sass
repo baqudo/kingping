@@ -22,14 +22,11 @@
   line-height: 3em 
   &:before
     content: "" 
-    position: absolute
-    top: 10%
-    left: 0 
     display: block
-    width: 100%
-    height: em(50, 20)
-    background: url(../img/features_header.png) no-repeat center
+    +vcenter
+    +s(icon-title)
     opacity: 0.2
+
 html
   font-size: 100%
 
