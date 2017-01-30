@@ -33,6 +33,23 @@
 		background-color: #f6a79f
 		border-color: transparent 
 .price
+	&__block
+		&.is-standard
+			.price__title
+				color: #afbe96 
+			.price__head:after
+				display: block
+				+s(like)
+		&.is-popular
+			.price__title
+				color: #627787
+			.price__head:after
+				+s(heart)
+		&.is-premium
+			.price__title
+				color: #f3897f
+			.price__head:after
+				+s(star)
 	&__title
 		margin-bottom: 22px 
 		font-size: em(14)
@@ -49,19 +66,7 @@
 		&:after
 			content: "" 
 			+vcenter
-	.is-standard
-		color: #afbe96 
-		&:after
-			display: block
-			+s(like)
-	.is-popular
-		color: #627787
-		&:after
-			+s(heart)
-	.is-premium
-		color: #f3897f
-		&:after
-			+s(star)
+
 	&__value
 		color: #000000
 		font-size: em(45)

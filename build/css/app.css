@@ -796,6 +796,40 @@ a:hover {
   border-color: transparent;
 }
 
+.price__block.is-standard .price__title {
+  color: #afbe96;
+}
+
+.price__block.is-standard .price__head:after {
+  display: block;
+  background-image: url("../img/sprite.png");
+  width: 34px;
+  height: 32px;
+  background-position: -314px -267px;
+}
+
+.price__block.is-popular .price__title {
+  color: #627787;
+}
+
+.price__block.is-popular .price__head:after {
+  background-image: url("../img/sprite.png");
+  width: 33px;
+  height: 29px;
+  background-position: -358px -267px;
+}
+
+.price__block.is-premium .price__title {
+  color: #f3897f;
+}
+
+.price__block.is-premium .price__head:after {
+  background-image: url("../img/sprite.png");
+  width: 36px;
+  height: 32px;
+  background-position: -268px -267px;
+}
+
 .price__title {
   margin-bottom: 22px;
   font-size: 0.875em;
@@ -821,40 +855,6 @@ a:hover {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
-
-.price .is-standard {
-  color: #afbe96;
-}
-
-.price .is-standard:after {
-  display: block;
-  background-image: url("../img/sprite.png");
-  width: 34px;
-  height: 32px;
-  background-position: -314px -267px;
-}
-
-.price .is-popular {
-  color: #627787;
-}
-
-.price .is-popular:after {
-  background-image: url("../img/sprite.png");
-  width: 33px;
-  height: 29px;
-  background-position: -358px -267px;
-}
-
-.price .is-premium {
-  color: #f3897f;
-}
-
-.price .is-premium:after {
-  background-image: url("../img/sprite.png");
-  width: 36px;
-  height: 32px;
-  background-position: -268px -267px;
 }
 
 .price__value {
