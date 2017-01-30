@@ -438,7 +438,7 @@ a:hover {
   float: right;
   margin-right: 45px;
   margin-top: 17px;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", sans-serif;
   font-size: 0.9375em;
   font-weight: 600;
   text-transform: uppercase;
@@ -465,7 +465,7 @@ a:hover {
 .menu__link {
   display: block;
   color: #ffffff;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", sans-serif;
   font-size: 0.8125em;
   font-weight: 600;
   line-height: 2em;
